@@ -9,7 +9,7 @@ if __name__ == "__main__":
    
    # Build the recommendation model using Alternating Least Squares
    rank = 10
-   numIterations = 10
+   numIterations = 100
    model = ALS.train(ratings, rank, numIterations)
    
    # Evaluate the model on training data
