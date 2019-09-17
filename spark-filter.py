@@ -12,4 +12,4 @@ words = sc.parallelize (
 )
 words_filter = words.filter(lambda x: 'spark' in x)
 filtered = words_filter.collect()
-print "Fitered RDD -> %s" % (filtered)
+print "Fitered RDD -> %s" % (filtered.count())
