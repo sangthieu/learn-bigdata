@@ -1,6 +1,6 @@
 from pyspark import SparkContext
 from pyspark import SparkFiles
-finddistance = "/user/maria_dev/finddistance.R"
+finddistance = "/home/maria_dev/finddistance.R"
 finddistancename = "finddistance.R"
 sc = SparkContext("local", "SparkFile App")
 sc.addFile(finddistance)
