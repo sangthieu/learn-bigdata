@@ -1,5 +1,5 @@
 from pyspark import SparkContext
-logFile = "ml-100k/u.data"  
+logFile = "ml-100k/u.item"  
 sc = SparkContext("local", "first app")
 logData = sc.textFile(logFile).cache()
 numAs = logData.filter(lambda s: 'a' in s).count()
